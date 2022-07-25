@@ -11,90 +11,93 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요"
-        android:textColor="#0000FF"
-        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="220725 실습"
+        android:textColor="#FF6347"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="안녕하세요"
-            android:textColor="#0000FF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="안녕하세요"
-            android:textColor="#0000FF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="안녕하세요"
-            android:textColor="#0000FF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+     <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="20dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/image_220725"
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요"
-        android:textColor="#0000FF"
+        android:layout_marginHorizontal="20dp"
+        android:text="아이디"
+        android:textColor="#FF6347"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:hint="이메일을 입력해주세요."
         android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
         android:maxLines="1" />
-
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="비밀번호를 입력해주세요."
-        android:maxLines="1"
-        android:imeOptions="actionSearch"
-        android:inputType="numberSigned"/>
+        android:layout_marginHorizontal="20dp"
+        android:text="비밀번호"
+        android:textColor="#FF6347"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="19dp"
+    android:hint="비밀번호를 입력해주세요."
+    android:imeOptions="actionNext"
+    android:inputType="textEmailAddress"
+    android:maxLines="1" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="로그인"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SignUp"
-        android:textAllCaps="false"
-        android:enabled="false"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
         android:text="자동 로그인"/>
-<!--    -->
-    <RadioGroup
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1번"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2번"/>
-</RadioGroup>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="#B22222"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#000000"
+            android:enabled="false"
+            android:text="SignUp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
 </LinearLayout>
